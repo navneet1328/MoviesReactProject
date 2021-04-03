@@ -1,23 +1,16 @@
 import logo from './logo.svg';
 import './App.css';
+import MoviesContainer from './containers/MoviesContainer';
+import Tab from './components/Tab';
 
-function App() {
+const App = () => {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+      <header className='App-header'>
+        <h1 className='App-title'>React Movies App</h1>     
       </header>
+      {/* <MoviesContainer/>   */}
+      <Tab/>
     </div>
   );
 }
